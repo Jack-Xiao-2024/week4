@@ -1,0 +1,778 @@
+
+/* 覆蓋全部 */
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 載入字體 */
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+}
+
+/* 共用語法 */
+
+.d-f{
+    display: flex;
+}
+
+.c-w{
+    color: white;
+}
+
+/* nav bar */
+
+.header{
+    max-width: 100%;
+    background-color: #AA0601;
+    position: relative;
+    z-index: 5;
+}
+
+.top{
+    max-width: 1290px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.list{
+    display: flex;
+}
+
+.list ul{
+    display: flex;
+    width: 526px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top ul li a{
+    color: white;
+}
+
+
+.logo{
+    display: inline-block;
+    width: 80px;
+    height: 45px;
+}
+
+
+
+/* Tablet RWD */
+
+@media (max-width:992px) {
+    .top{
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .list{
+        width: 70%;
+    }
+    .list ul {
+        width: 100%;
+    }
+}
+
+/* Phone RWD */
+
+@media (max-width:767px) {
+    .top{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .logo{
+       margin-top: 12px;
+       margin-bottom: 12px;
+       margin-left: 15px;
+    }
+
+    .list{
+        width: 100%;
+    }
+
+    .list ul{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .list ul li{
+        width: 50%;
+        border: 1px solid white;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+    }
+}
+
+/* Banner */
+
+.banner{
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.bgi{
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png);
+    background-size: cover; /* 讓圖片覆蓋整個元素 */
+    background-position: center; /* 將圖片居中顯示 */
+    max-width: 100%; /* 根據需要設置寬度 */
+    height: 787px; /* 根據需要設置高度 */
+}
+
+/* intro靠很右邊，待解決 */
+
+.intro{
+    max-width: 1290px;
+    margin-left: auto;
+    padding: 0 12px;
+}
+
+.intro-text{
+   text-align: right;
+   height: 100%;
+}
+.intro-text p{
+    color: #650300;
+    font-size: 36px;
+}
+
+.intro-text h3{
+    color: #650300;
+    font-size: 64px;
+}
+
+/* button */
+
+.buy{
+    text-decoration: none;
+    color: white;
+    background-color: #AA0601;
+}
+
+
+
+/* Tablet RWD */
+
+@media (max-width:992px){
+    .bgi{
+        background-image:url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+        background-size: cover;/* 讓圖片覆蓋整個元素 */
+        background-position: center;/* 將圖片居中顯示 */}
+}
+
+/* Phone RWD */
+
+@media (max-width:787px){
+
+    .banner{
+        height: 396px;
+    }
+
+    .intro-text p{
+        font-size: 16px;
+    }
+    
+    .intro-text h3{
+        font-size: 24px;
+    }
+    
+}
+
+
+/* Section2 */
+
+.section2{  
+    max-width: 1920px;
+    height: 488px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+/* 背景顏色 */
+
+.bgc{
+    background-color: #FBF2F2;
+}
+
+/* 字體設定 */
+.profession p{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 32px;
+    font-size: 48px;
+    color: #650300;
+}
+
+/* 介紹卡片 */
+
+.s2-container{
+    max-width: 1290px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.card{
+    width: 25%;
+    padding-right: 12px;
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h3{
+    font-size: 24px;
+    color: #650300;
+    margin-top: 25px;
+}
+
+.card p{
+    margin-top: 8px;
+}
+
+.card img{
+    width: 83px;
+    height: 83px;
+}
+
+/* Tablet RWD */
+
+@media (max-width:992px){
+
+    .section2{
+        height: 720px;
+    }
+    
+    .card{
+        width: 50%;
+    }
+}
+
+/* Phone RWD */
+
+@media (max-width:787px) {
+    
+    .section2{
+        height: 1068px;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+}
+
+
+/* Section3 */
+
+.section3{
+    max-width: 1920px;
+    height:auto;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.classic p{
+    font-size: 48px;
+    color: #650300;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 48px;
+}
+
+.s3-container{
+    max-width: 1290px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.s3-card{
+    width: 30%;
+}
+
+.s3-card p{
+    font-weight: bold;   /* 設置字體為粗體 */
+    font-style: italic;  /* 設置字體為斜體 */
+    font-size: 48px;
+    color: #650300;
+    text-align: center;
+}
+
+
+/* Tablet RWD */
+
+@media (max-width:992px) {
+
+    .s3-container{
+        width: 50%;
+        flex-wrap: wrap;
+    }
+
+    .s3-card{
+        width: 100%;
+    }
+
+
+}
+
+/* Phone RWD */
+
+@media (max-width:787px) {
+    
+    .s3-container{
+        width: 90%;
+    }
+
+}
+
+
+/* Section4 */
+
+.section4{
+    max-width: 1960px;
+    display: flex;
+    height: auto;
+}
+
+.famous{
+    margin-top: 80px;
+    margin-bottom: 48px;
+}
+
+.famous p{
+    font-size: 48px;
+    color: white;
+    text-align: center;
+}
+
+.bgi2{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+    background-size: cover; /* 讓圖片覆蓋整個元素 */
+    background-position: center; /* 將圖片居中顯示 */
+    max-width: 100%; /* 根據需要設置寬度 */
+    height: 608px; /* 根據需要設置高度 */
+}
+
+.s4-box{
+    max-width: 1290px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.s4-card{
+    background-color: white;
+}
+
+.s4-card p{
+    font-weight: bold;   /* 設置字體為粗體 */
+    font-style: italic;  /* 設置字體為斜體 */
+    font-size: 48px;
+    color: #650300;
+    text-align: center;
+}
+
+/* Tablet RWD */
+
+@media (max-width:992px) {
+    
+    .bgi2{
+        height: 960px;
+    }
+
+    .s4-container{
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .s4-card{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+
+}
+
+
+/* Phone RWD */
+
+    @media (max-width:787px) {
+        .bgi2{
+            height: 820px;
+        }
+
+        /* s4-card圖片要切換成設計稿指定圖 待解決 */
+    }
+
+/* Section5 */
+
+.section5{
+    max-width: 1960px;
+    display: flex;
+    height: auto;
+}
+
+.customer p{
+    font-size: 48px;
+    color: #650300;
+    text-align: center;
+}
+
+.customer{
+    margin-top: 80px;
+    margin-bottom: 48px;
+}
+
+.s5-box{
+    max-width: 1290px;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.s5-container{
+    justify-content: space-between;
+}
+
+.s5-card{
+    position: relative;
+    width: 25%;
+    height: 511px;
+    margin-right: 12px;
+    margin-left: 12px;
+    border: 1px solid #DEE2E6;
+}
+
+.s5-review{
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.date{
+    position: absolute;
+    font-size: 14px;
+    color: #707070;
+    bottom: 16px;
+    left: 16px;
+}
+
+/* Ｔablet RWD */
+
+@media (max-width:992px) {
+    
+
+
+    .s5-container{
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .s5-card{
+        max-width: 336px;
+        width: 50%;
+        margin-bottom: 24px;
+    }
+
+    .s5-img{
+        max-width: 336px;
+    }
+}
+
+/* Phone RWD */
+
+@media (max-width:787px) {
+    
+    .s5-card{
+        max-width: 348px;
+        width: 100%;
+    }
+
+    .s5-img{
+        max-width: 348px;
+    }
+
+}
+
+
+/* srction6 */
+
+.section6{
+    background-color: #FBF2F2;
+    padding-bottom: 80px;
+}
+
+
+.contact_us{
+    padding-top: 80px;
+    padding-bottom: 48px;
+    margin: 0 auto;
+}
+
+.contact_us p{
+    font-size: 48px;
+    color: #650300;
+}
+
+.contact_intro p{
+    font-size: 20px;
+}
+
+.s6-box{
+    max-width: 636px;
+    margin: 0 auto;
+}
+
+
+
+.formbox{
+    max-width: 636px;
+    margin: 0 auto;
+}
+
+.form{
+    flex-direction: column;
+    line-height: 2.5;
+}
+
+
+.botton{
+    max-width: 636px;
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    width: 65%;
+    height: 56px;
+    border: 0;
+    background-color: #AA0601;
+    color: white;
+}
+
+/* Tabelt RWD */
+
+@media (max-width:992px) {
+    
+    .s6-box{
+        width: 80%;
+    }
+}
+
+/* Phone RWD */
+
+@media (max-width:787px) {
+
+    .s6-box{
+        max-width: 100%;
+    }
+
+    .btn{
+        width: 90%;
+    }
+
+}
+
+/* footer */
+
+.footer{
+    background-color: #AA0601;
+}
+
+.bottom{
+    max-width: 1290px; ;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 32px;
+}
+
+/* 聯絡方式跟社群媒體 */
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contact_left{
+    flex-direction: column;
+}
+
+.contact_left ul{
+    justify-content: space-between;
+}
+
+.contact_left ul li{
+    padding-right: 48px;
+}
+
+.contact_phone{
+    max-width: 100%;
+}
+.contact_mail{
+    max-width: 100%;
+}
+
+.contact_left ul li a{
+    color: white;
+}
+
+.contact_right{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_right img{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+}
+
+/* 白色線條 */
+
+.line{
+    max-width: 100%;
+    height: 1px;
+    border: solid 1px white;
+}
+
+/* Contact Phone */
+
+.contact_phone{
+    margin-top: 36px;
+    margin-bottom: 8px;
+}
+
+.material-icons-outlined{
+    color: white;
+    width: 36px;
+    height: 36px;
+}
+
+/* Contact Mail */
+
+.contact_mail{
+    margin-bottom: 32px;
+}
+
+/* Right */
+
+.rights{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    justify-content: space-between;
+}
+
+.rights ul{
+    width: 174px;
+    justify-content: space-between;
+}
+
+.rights ul li{
+    font-size: 12px;
+}
+
+
+/* Tablet RWD */
+
+@media (max-width:992px){
+    
+    .bottom{
+        padding-right: 36px;
+        padding-left: 36px;
+    }
+
+    .contact_left ul li{
+        padding-right: 35px;
+    }
+
+    .contact_phone p{
+        font-size: 36px;
+    }   
+    
+    .contact_mail p{
+        font-size: 36px;
+    }
+
+    .contact_right{
+        width: 20%;
+    }
+
+}
+
+
+/* Phone RWD */
+
+    @media (max-width:767px) {
+
+        .bottom{
+            padding: 0px;
+            margin-top: 24px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .contact_left ul{   
+            display: none;
+        }
+
+        .contact_right{
+            margin-top: 24px;
+        }
+
+        .contact_phone p{
+            font-size: 16px;
+        }
+
+        .contact_mail p{
+            font-size: 16px;
+        }
+
+        .contact_right img{
+            width: 24px;
+            height: 24px;
+        }
+
+        .rights{
+            flex-wrap: wrap;
+        }
+
+        .rights p{
+            width: 100%;
+            display: inline-block;
+            font-size: 24px;
+        }
+
+        .rights ul{
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .rights ul li{
+            width: 100%;
+            font-size: 24px;
+            padding-top: 8px;
+        }
+    }
