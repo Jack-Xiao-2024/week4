@@ -202,8 +202,8 @@ body{
 
 .section2{  
     max-width: 1920px;
-    height: 488px;
     margin: 0 auto;
+    padding-bottom: 80px;
     flex-direction: column;
 }
 
@@ -313,7 +313,7 @@ body{
 .s3-card p{
     font-weight: bold;   /* 設置字體為粗體 */
     font-style: italic;  /* 設置字體為斜體 */
-    font-size: 48px;
+    font-size: 45px;
     color: #650300;
     text-align: center;
 }
@@ -544,7 +544,15 @@ body{
     margin: 0 auto;
 }
 
+// formbox 
 
+input{
+    background-color: transparent;
+}
+
+textarea{
+    background-color: transparent;
+}
 
 .formbox{
     max-width: 636px;
@@ -650,13 +658,13 @@ body{
     height: 48px;
 }
 
-/* 白色線條 */
+/* 分隔線 */
 
-.line{
-    max-width: 100%;
-    height: 1px;
-    border: solid 1px white;
-}
+    .rights{
+        border-top:1px solid white;
+    }
+
+
 
 /* Contact Phone */
 

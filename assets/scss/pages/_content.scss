@@ -130,13 +130,15 @@ img{
         height: 100%;
         padding-top: 24px;
         padding-bottom: 24px;
+        border-bottom: 8px solid transparent;
 }
 
 .choose ul li a:hover{
     border-bottom: 8px solid #AA0601;
 }
 
-/* 鼠標移過去底部圖片會動 待解決 */
+/* 鼠標移過去底部圖片會動 
+8/28把choose底部加入透明border已解決*/
 
 /* Banner圖片 */
 .picture {
@@ -236,6 +238,13 @@ img{
     color: white;
     background-color: black;
 }
+
+.list2 a:active{
+    color: white;
+    background-color: black;
+}
+
+// 已加入active 但沒有呈現樣式 待解決
 
 
 .brown1{
